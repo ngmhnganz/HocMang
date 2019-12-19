@@ -1,5 +1,6 @@
 package Lop1K.com;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -43,6 +44,12 @@ public class TestMang {
 		int kq=timTuyenTinh(M,k);
 		if (kq==-1) System.out.println("Không thấy k.");
 		else System.out.println("Thấy k tại vị trí "+kq);
+		System.out.println("Mảng sau khi sắp xếp.");
+		Arrays.sort(M);
+		xuatMang(M);
+		System.out.println();
+		Arrays.binarySearch(M, k);
+		xuatMang(M);
 		}
 	}
 }
